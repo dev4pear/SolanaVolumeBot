@@ -1,0 +1,6 @@
+1. install modules `npm install`
+2. create wallets `npm run create`, wallet info saves in wallet_history.log
+3. save created wallet secret_keys in `wallet` variable of `execute_swap.ts`
+4. config `wallet_count` variable of `execute_swap.ts`
+4. send SOL and USDC to created wallets
+5. start bot `npm run swap`

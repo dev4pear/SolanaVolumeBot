@@ -1,0 +1,30 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "ts-node create_wallet.ts",
+    "swap": "cross-env ANCHOR_PROVIDER_URL=https://boldest-palpable-pallet.solana-mainnet.quiknode.pro/e0a358167e7dfda9c51aec059814b4606f444852 ANCHOR_WALLET=wallet.json ts-node execute_swap.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.27.0",
+    "@meteora-ag/dlmm": "^1.0.27",
+    "@orca-so/whirlpools-sdk": "^0.12.5",
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/web3.js": "^1.91.7",
+    "bip39": "^3.1.0",
+    "bn.js": "^5.2.1",
+    "cross-fetch": "^4.0.0",
+    "dotenv": "^16.4.5",
+    "micro-ed25519-hdkey": "^0.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "cross-env": "^7.0.3"
+  }
+}
